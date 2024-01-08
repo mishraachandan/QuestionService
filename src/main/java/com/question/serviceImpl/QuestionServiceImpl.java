@@ -33,7 +33,7 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public Question getQuestionByQuizId(Long id){
+    public List<Question> getQuestionByQuizId(Long id){
         return questionRepository.findByQuizId(id);
     }
 }

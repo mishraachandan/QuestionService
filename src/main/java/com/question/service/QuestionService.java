@@ -13,6 +13,6 @@ public interface QuestionService {
 
     Question getOne(Long id);
 
-    Question getQuestionByQuizId(Long Id);
+    List<Question> getQuestionByQuizId(Long id);
 
 }
