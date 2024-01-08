@@ -31,4 +31,9 @@ public class QuestionServiceImpl implements QuestionService {
     public Question getOne(Long id) {
         return questionRepository.findById(id).orElseThrow(() -> new RuntimeException("Sorry, this id is not valid."));
     }
+
+    @Override
+    public Question getQuestionByQuizId(Long id){
+        return questionRepository.findByQuizId(id);
+    }
 }
